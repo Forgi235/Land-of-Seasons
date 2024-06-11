@@ -1,8 +1,11 @@
 většina použitelných kusů jsou buď v "obstacle" nebo v "other prefabs"
 pokud nějaký obstacle nefunguje, poste se nejdřivě podívat, jestli jste ho dali na správné místo v hiearchii. příklad:
 "Crumble block" patří do   Rooms > "room" > DeathResetable > CrumbleBlocks > "CrumbleBlock" > "jednotlivé tily blocku které se rozpadnou společně"
+Pár věcí (asi tak 2) ale mají nedodělané mechaniky takže ty budou fungovat jen z polovini (vítr je implementován jen horizontání ale ne vertikální)
 pokud chcete postavit místnost, dejte jí co nejblíže nějaké jiné (klidně i kus prez sebe ale to nedoporučuji z důvodů načítání překážek), polygon collider roomky je zároveň hranice přez kterou neprojde kamera a základní velikost prefabu je minimální velikost (při této velikosti se kamera nehne)
 každá roomka má svůjí vlastní virtuální kameru a pokud přidáté další roomku tak do kamery nezapomeňte do kolonky "Follow" dát "Camera Pivot", který se nachází v hiearchii pod hráčem (pokud zapomenete, dostanete upozornění v podobě erroru jakmile do roomky vstoupíte)
 pokud nemůžete při spuštění najít hráče, je to kvůli tomu, že hráč se v hiearchii hýbe mezi jednotlivími roomkami (najděte ve které roomce jste a najdete hráče).
 kód moc dobře popsaný není takže názvů se moc přísně nedržet pokud tomu chaosu chcete porozumět.
 vše je položeno pomocí grid snapingu o velikosti 0.25.
+
+PS: podle věcí, které jsou nazvané podobně jako "kill me" a "bullsh*t", můžete najít některé z věcí které mě štvali nejvíce 
