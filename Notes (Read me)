@@ -5,3 +5,4 @@ pokud chcete postavit místnost, dejte jí co nejblíže nějaké jiné (klidně
 každá roomka má svůjí vlastní virtuální kameru a pokud přidáté další roomku tak do kamery nezapomeňte do kolonky "Follow" dát "Camera Pivot", který se nachází v hiearchii pod hráčem (pokud zapomenete, dostanete upozornění v podobě erroru jakmile do roomky vstoupíte)
 pokud nemůžete při spuštění najít hráče, je to kvůli tomu, že hráč se v hiearchii hýbe mezi jednotlivími roomkami (najděte ve které roomce jste a najdete hráče).
 kód moc dobře popsaný není takže názvů se moc přísně nedržet pokud tomu chaosu chcete porozumět.
+vše je položeno pomocí grid snapingu o velikosti 0.25.
